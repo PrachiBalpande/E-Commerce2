@@ -1,3 +1,5 @@
+
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../service/product.service';
@@ -40,3 +42,4 @@ export class SellerUpdateProductComponent implements OnInit {
 
   }
 }
+

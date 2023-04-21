@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from '../service/product.service';
@@ -18,7 +19,7 @@ export class HeaderComponent implements OnInit {
 
     this.route.events.subscribe((val: any) => {
       if (val.url) {
-        if (localStorage.getItem('seller') && val.url.includes('seller')) {
+        if (localStorage.getItem('seller') || val.url.includes('seller')) {
           console.log("this is seller area")
           this.menuType = 'seller'
           if (localStorage.getItem('seller')) {

@@ -1,4 +1,6 @@
-<ngb-carousel *ngIf="popularProducts">
+
+
+ <ngb-carousel *ngIf="popularProducts">
 	<ng-template *ngFor="let item of popularProducts" ngbSlide>
 		<div class="picsum-img-wrapper">
 			<a routerLink="/details/{{item.id}}">
@@ -35,4 +37,3 @@
 		</div>
 	</div>
 </div>
-
